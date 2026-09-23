@@ -58,6 +58,9 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+	testLogging {
+		showStandardStreams = true
+	}
 }
 
 tasks.named('clean') {
